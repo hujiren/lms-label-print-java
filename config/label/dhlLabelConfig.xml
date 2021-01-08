@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+    <printTime path="ShipmentDate"/>
+    <packageType path="ProductContentCode"/>
+    <shipperCompanyName path="Shipper/CompanyName"/>
+    <shipperName path="Shipper/Contact/PersonName"/>
+<!--    <shipperAddressLine path="Shipper" rowClassName="com.apl.lms.label.print.bo.DHLCommonBaseLabelBo2">-->
+<!--        <shipperAddressLine path="Shipper/AddressLine"/>-->
+<!--    </shipperAddressLine>-->
+    <shipperCity path="Shipper/City"/>
+    <divisionCode path="Shipper/DivisionCode"/>
+    <shipperContact path="Shipper/Contact/PhoneNumber"/>
+
+    <receiverName path="Consignee/Contact/PersonName"/>
+    <receiverAddressLine path="Consignee/AddressLine" rowClassName="java.lang.String"/>
+    <receiverCity path="Consignee/City"/>
+    <receiverCountryName path="Consignee/CountryName"/>
+    <receiverContact path="Consignee/Contact/MobilePhoneNumber"/>
+<!--    <overseasAirLine path=""/>-->
+
+    <referenceId path="Pieces/Piece/PieceReference/ReferenceID"/>
+    <currencyCode path="CurrencyCode"/>
+    <weight path="Pieces/Piece/Weight"/>
+    <pieceContents path="Pieces/Piece/PieceContents"/>
+
+    <licensePlate path="Pieces/Piece/LicensePlate"/>
+
+    <barCodeSn path="Pieces/Piece/LicensePlate" rowClassName="java.lang.String"/>
+
+    <dataIdentifier path="Pieces/Piece/DataIdentifier" rowClassName="java.lang.String"/>
+    <productShortName path="ProductShortName"/>
+
+
+<!--    <churchyardAirLine path=""/>-->
+<!--    <FRT path=""/>-->
+<!--    <DTP path=""/>-->
+    <termsOfTrade path="Dutiable/TermsOfTrade"/>
+    <declaredValue path="Dutiable/DeclaredValue"/>
+    <pieces path="Piece"/>
+
+
+    <origin path="OriginServiceArea/ServiceAreaCode"/>
+
+</root>

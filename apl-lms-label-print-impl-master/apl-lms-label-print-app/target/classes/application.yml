@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: apl-lms-label-print-app
+
+  profiles:
+    include:
+      common, apl-lms-label-print-app
+
+  main:
+    allow-bean-definition-overriding: true
+

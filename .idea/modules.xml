@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-app/apl-lms-label-print-app.iml" filepath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-app/apl-lms-label-print-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-impl-master.iml" filepath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-impl-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apl-lms-label-print-java.iml" filepath="$PROJECT_DIR$/apl-lms-label-print-java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apl-lms-label-print-pojo-master/apl-lms-label-print-pojo/apl-lms-label-print-pojo.iml" filepath="$PROJECT_DIR$/apl-lms-label-print-pojo-master/apl-lms-label-print-pojo/apl-lms-label-print-pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apl-lms-label-print-pojo-master/apl-lms-label-print-pojo-master.iml" filepath="$PROJECT_DIR$/apl-lms-label-print-pojo-master/apl-lms-label-print-pojo-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-service/apl-lms-label-print-service.iml" filepath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-service/apl-lms-label-print-service.iml" />
+    </modules>
+  </component>
+</project>

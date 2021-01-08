@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<TestStudent>
+    <name>苏炳添</name>
+    <age>25</age>
+    <score>
+        <math>98</math>
+    </score>
+    <countryList>
+        <Country>
+            <countryNameCn>中国</countryNameCn>
+            <name>china</name>
+            <code>CN</code>
+            <address>
+                <string>广东</string>
+                <string>黑龙江</string>
+                <string>天津</string>
+                <string>河北</string>
+                <string>内蒙古</string>
+            </address>
+        </Country>
+        <Country>
+            <countryNameCn>美国</countryNameCn>
+            <code>US</code>
+            <address>
+                <string>加利福尼亚</string>
+                <string>德克萨斯</string>
+                <string>坦桑尼亚</string>
+            </address>
+        </Country>
+        <Country>
+            <countryNameCn>朝鲜</countryNameCn>
+            <code>CO</code>
+            <address>
+                <string>广东</string>
+                <string>黑龙江</string>
+                <string>天津</string>
+                <string>河北</string>
+                <string>内蒙古</string>
+            </address>
+        </Country>
+    </countryList>
+</TestStudent>
