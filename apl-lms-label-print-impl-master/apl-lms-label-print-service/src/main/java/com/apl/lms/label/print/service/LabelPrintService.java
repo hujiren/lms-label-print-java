@@ -1,5 +1,7 @@
 package com.apl.lms.label.print.service;
 
+import com.apl.lms.label.print.vo.InvoiceBase64Vo;
+
 import javax.servlet.http.HttpServletResponse;
 
 /**
@@ -17,4 +19,10 @@ public interface LabelPrintService {
      */
     void printLabel(HttpServletResponse response, Long id, Integer docType);
 
+    /**
+     * 返回发票base64编码
+     * @param id
+     * @return
+     */
+    InvoiceBase64Vo getInvoiceBase64(Long id);
 }
