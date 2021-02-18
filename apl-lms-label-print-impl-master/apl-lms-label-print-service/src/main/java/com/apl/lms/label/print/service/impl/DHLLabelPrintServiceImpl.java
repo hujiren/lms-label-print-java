@@ -79,7 +79,7 @@ public class DHLLabelPrintServiceImpl {
             String base64Data = rootNode.element("LabelImage").element("MultiLabels").element("MultiLabel").element("DocImageVal").getText();
 
             //组装文件全路径
-            saveFileFullPath = xmlFileAbsolutePath.replaceAll(".xml", "-voice.pdf");
+            saveFileFullPath = xmlFileAbsolutePath.replaceAll(".xml", "-invoice.pdf");
             //base64转图片并写出到指定路径
             boolean isSuccess = ConvertImageUtil.base64GeneratorImage(base64Data, saveFileFullPath);
             if(!isSuccess)

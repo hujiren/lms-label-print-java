@@ -2,7 +2,55 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1c5d9b6-0309-45f1-9143-6126f4a85acd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-service/src/main/java/com/apl/lms/label/print/mapper/UPSLabelPrintMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-service/src/main/java/com/apl/lms/label/print/service/impl/TestXmlServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-service/src/main/resources/mapper/UPSLabelPrintMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apl-lms-label-print-pojo-master/apl-lms-label-print-pojo/src/main/java/com/apl/lms/label/print/bo/UPSInvoiceBo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apl-lms-label-print-pojo-master/apl-lms-label-print-pojo/src/main/java/com/apl/lms/label/print/bo/WaybillCommodityBo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apl-lms-label-print-pojo-master/apl-lms-label-print-pojo/src/main/java/com/apl/lms/label/print/po/DHLPiecePo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apl-lms-label-print-pojo-master/apl-lms-label-print-pojo/src/main/java/com/apl/lms/label/print/po/DHLPo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/label/TestdhlPieceConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/previewLabel.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/previewUPSInvoice.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/template/upsInvoice.jasper" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-app/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-app/src/main/java/com/apl/lms/label/print/app/config/DataSourceHealthConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-app/src/main/java/com/apl/lms/label/print/app/config/DataSourceHealthConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-app/src/main/java/com/apl/lms/label/print/app/controller/LabelPrintController.java" beforeDir="false" afterPath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-app/src/main/java/com/apl/lms/label/print/app/controller/LabelPrintController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-app/target/classes/com/apl/lms/label/print/app/config/DataSourceHealthConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-app/target/classes/com/apl/lms/label/print/app/config/DataSourceHealthConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-app/target/classes/com/apl/lms/label/print/app/controller/LabelPrintController.class" beforeDir="false" afterPath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-app/target/classes/com/apl/lms/label/print/app/controller/LabelPrintController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-service/src/main/java/com/apl/lms/label/print/dao/LabelPrintDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-service/src/main/java/com/apl/lms/label/print/dao/LabelPrintDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-service/src/main/java/com/apl/lms/label/print/service/LabelPrintService.java" beforeDir="false" afterPath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-service/src/main/java/com/apl/lms/label/print/service/LabelPrintService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-service/src/main/java/com/apl/lms/label/print/service/impl/AramexLabelPrintServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-service/src/main/java/com/apl/lms/label/print/service/impl/AramexLabelPrintServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-service/src/main/java/com/apl/lms/label/print/service/impl/DHLLabelPrintServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-service/src/main/java/com/apl/lms/label/print/service/impl/DHLLabelPrintServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-service/src/main/java/com/apl/lms/label/print/service/impl/FEDEXLabelPrintServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-service/src/main/java/com/apl/lms/label/print/service/impl/FEDEXLabelPrintServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-service/src/main/java/com/apl/lms/label/print/service/impl/LabelPrintServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-service/src/main/java/com/apl/lms/label/print/service/impl/LabelPrintServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-service/src/main/java/com/apl/lms/label/print/service/impl/UPSLabelPrintServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-service/src/main/java/com/apl/lms/label/print/service/impl/UPSLabelPrintServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-service/src/main/java/com/apl/lms/label/print/utils/ConvertImageUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-service/src/main/java/com/apl/lms/label/print/utils/ConvertImageUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-service/src/main/java/com/apl/lms/label/print/utils/ImgUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-service/src/main/java/com/apl/lms/label/print/utils/ImgUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-service/src/main/java/com/apl/lms/label/print/utils/mergeUpsPdf.java" beforeDir="false" afterPath="$PROJECT_DIR$/config/bak/mergeUpsPdf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-service/target/classes/com/apl/lms/label/print/dao/LabelPrintDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-service/target/classes/com/apl/lms/label/print/dao/LabelPrintDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-service/target/classes/com/apl/lms/label/print/service/LabelPrintService.class" beforeDir="false" afterPath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-service/target/classes/com/apl/lms/label/print/service/LabelPrintService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-service/target/classes/com/apl/lms/label/print/service/impl/AramexLabelPrintServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-service/target/classes/com/apl/lms/label/print/service/impl/AramexLabelPrintServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-service/target/classes/com/apl/lms/label/print/service/impl/DHLLabelPrintServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-service/target/classes/com/apl/lms/label/print/service/impl/DHLLabelPrintServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-service/target/classes/com/apl/lms/label/print/service/impl/FEDEXLabelPrintServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-service/target/classes/com/apl/lms/label/print/service/impl/FEDEXLabelPrintServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-service/target/classes/com/apl/lms/label/print/service/impl/LabelPrintServiceImpl$LabelPrintServiceImplEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-service/target/classes/com/apl/lms/label/print/service/impl/LabelPrintServiceImpl$LabelPrintServiceImplEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-service/target/classes/com/apl/lms/label/print/service/impl/LabelPrintServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-service/target/classes/com/apl/lms/label/print/service/impl/LabelPrintServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-service/target/classes/com/apl/lms/label/print/service/impl/UPSLabelPrintServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-service/target/classes/com/apl/lms/label/print/service/impl/UPSLabelPrintServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-service/target/classes/com/apl/lms/label/print/utils/ConvertImageUtil$ConvertImageUtilEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-service/target/classes/com/apl/lms/label/print/utils/ConvertImageUtil$ConvertImageUtilEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-service/target/classes/com/apl/lms/label/print/utils/ConvertImageUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-service/target/classes/com/apl/lms/label/print/utils/ConvertImageUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-service/target/classes/com/apl/lms/label/print/utils/ImgUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-service/target/classes/com/apl/lms/label/print/utils/ImgUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-service/target/classes/com/apl/lms/label/print/utils/mergeUpsPdf.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apl-lms-label-print-pojo-master/apl-lms-label-print-pojo/src/main/java/com/apl/lms/label/print/vo/InvoiceBase64Vo.java" beforeDir="false" afterPath="$PROJECT_DIR$/apl-lms-label-print-pojo-master/apl-lms-label-print-pojo/src/main/java/com/apl/lms/label/print/vo/InvoiceBase64Vo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bak/UPSLabelPrintServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/label/aramex-报文4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/label/dhlLabelConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config/label/TestdhlLabelConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/label/dhlResponse3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config/label/dhlResponse.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/label/fedex-response.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config/label/fedexResponse.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev-file/barcode-utils-online" beforeDir="false" afterPath="$PROJECT_DIR$/dev-file/barcode-utils-online" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev-file/config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev-file/text.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config/label/text.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/ExportExpPrice.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/previewInvoice.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +110,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/apl-lms-label-print-impl-master/apl-lms-label-print-app/src/main/java/com/apl/lms/label/print" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../apl-lms-price-exp-manage-java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -82,18 +130,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\java\apl-lms-label-print-java\report\template" />
+      <recent name="G:\java\apl-lms-label-print-java\report" />
       <recent name="G:\java\apl-lms-label-print-java\apl-lms-label-print-impl-master\apl-lms-label-print-service\src\main\java\com\apl\lms\label\print\utils" />
       <recent name="G:\java\apl-lms-label-print-java\config\bak" />
       <recent name="G:\java\apl-lms-label-print-java\dev-file\api-response" />
-      <recent name="G:\java\apl-lms-label-print-java\report\template" />
-      <recent name="G:\java\apl-lms-label-print-java\config\label" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.apl.lms.label.print.app.controller" />
       <recent name="com.apl.lms.label.print.service.impl" />
       <recent name="com.apl.lms.label.print.bo" />
       <recent name="com.apl.lms.label.print.po" />
       <recent name="com.apl.lms.label.print.util" />
-      <recent name="com.apl.lms.label.print.app.aop" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="G:\java\apl-lms-label-print-java\config\label" />
@@ -134,25 +182,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LabelPrintServiceImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.apl.lms.label.print.service.impl.LabelPrintServiceImpl" />
+    <configuration name="TestXmlServiceImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.apl.lms.label.print.service.impl.TestXmlServiceImpl" />
       <module name="apl-lms-label-print-service" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.apl.lms.label.print.service.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestXmlConfig" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.apl.lms.label.print.utils.TestXmlConfig" />
-      <module name="apl-lms-label-print-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.apl.lms.label.print.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -173,6 +208,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="mergeUpsPdf" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.apl.lms.label.print.utils.mergeUpsPdf" />
+      <module name="apl-lms-label-print-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.apl.lms.label.print.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LmsLabelPrintApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="apl-lms-label-print-app" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.apl.lms.label.print.app.LmsLabelPrintApplication" />
@@ -183,10 +231,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.FEDEXLabelPrintServiceImpl" />
+        <item itemvalue="Application.TestXmlServiceImpl" />
         <item itemvalue="Application.AramexLabelPrintServiceImpl" />
+        <item itemvalue="Application.mergeUpsPdf" />
         <item itemvalue="Application.UPSLabelPrintServiceImpl" />
-        <item itemvalue="Application.LabelPrintServiceImpl" />
-        <item itemvalue="Application.TestXmlConfig" />
       </list>
     </recent_temporary>
   </component>
@@ -203,7 +251,7 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Not Started" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
             </expand>
             <select />
@@ -234,7 +282,27 @@
       <workItem from="1609982248094" duration="24674000" />
       <workItem from="1610034725747" duration="114000" />
       <workItem from="1610070310470" duration="393000" />
-      <workItem from="1610070943215" duration="3071000" />
+      <workItem from="1610070943215" duration="28295000" />
+      <workItem from="1610154788344" duration="9521000" />
+      <workItem from="1610327570907" duration="20937000" />
+      <workItem from="1610413877595" duration="23842000" />
+      <workItem from="1610500569618" duration="6796000" />
+      <workItem from="1610532353377" duration="810000" />
+      <workItem from="1610595000925" duration="927000" />
+      <workItem from="1610611902081" duration="305000" />
+      <workItem from="1610694502485" duration="3224000" />
+      <workItem from="1610700398050" duration="13000" />
+      <workItem from="1610761860570" duration="594000" />
+      <workItem from="1610932662800" duration="7608000" />
+      <workItem from="1611130157264" duration="12146000" />
+      <workItem from="1611221849593" duration="613000" />
+      <workItem from="1611233541488" duration="1188000" />
+      <workItem from="1611670044034" duration="4333000" />
+      <workItem from="1611710211807" duration="2735000" />
+      <workItem from="1611796642250" duration="222000" />
+      <workItem from="1611796934921" duration="5175000" />
+      <workItem from="1611890548446" duration="4010000" />
+      <workItem from="1611969415028" duration="1926000" />
     </task>
     <servers />
   </component>
@@ -242,10 +310,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="178" key="#Project_Structure" timestamp="1610006458654">
+    <state x="552" y="178" key="#Project_Structure" timestamp="1610417283648">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="178" key="#Project_Structure/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1610006458654" />
+    <state x="552" y="178" key="#Project_Structure/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1610417283648" />
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609149952599">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -254,10 +322,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="650" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1609234437943" />
-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1610074224552">
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1610933608723">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1610074224552" />
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1610933608723" />
     <state x="0" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1609943609731">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -266,58 +334,79 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1609829690774" />
-    <state x="739" y="274" key="FileChooserDialogImpl" timestamp="1610073509403">
+    <state width="408" height="466" key="DebuggerActiveHint" timestamp="1610109110477">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="739" y="274" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1610073509403" />
-    <state width="1877" height="330" key="GridCell.Tab.0.bottom" timestamp="1610073170930">
+    <state width="408" height="466" key="DebuggerActiveHint/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1610109110477" />
+    <state x="739" y="274" key="FileChooserDialogImpl" timestamp="1611970656351">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="330" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1610073170930" />
-    <state width="1877" height="330" key="GridCell.Tab.0.center" timestamp="1610073170930">
+    <state x="-1181" y="274" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1610461773217" />
+    <state x="739" y="274" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1611970656351" />
+    <state width="1293" height="326" key="GridCell.Tab.0.bottom" timestamp="1611828864813">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="330" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1610073170930" />
-    <state width="1877" height="330" key="GridCell.Tab.0.left" timestamp="1610073170930">
+    <state width="1281" height="326" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1610459949615" />
+    <state width="1293" height="326" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1611828864813" />
+    <state width="1293" height="326" key="GridCell.Tab.0.center" timestamp="1611828864813">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="330" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1610073170930" />
-    <state width="1877" height="330" key="GridCell.Tab.0.right" timestamp="1610073170930">
+    <state width="1281" height="326" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1610459949615" />
+    <state width="1293" height="326" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1611828864813" />
+    <state width="1293" height="326" key="GridCell.Tab.0.left" timestamp="1611828864813">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="330" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1610073170930" />
-    <state width="1877" height="343" key="GridCell.Tab.1.bottom" timestamp="1610072955369">
+    <state width="1281" height="326" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1610459949615" />
+    <state width="1293" height="326" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1611828864813" />
+    <state width="1293" height="326" key="GridCell.Tab.0.right" timestamp="1611828864813">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="343" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1610072955369" />
-    <state width="1877" height="343" key="GridCell.Tab.1.center" timestamp="1610072955369">
+    <state width="1281" height="326" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1610459949615" />
+    <state width="1293" height="326" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1611828864813" />
+    <state width="1293" height="326" key="GridCell.Tab.1.bottom" timestamp="1611828864814">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="343" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1610072955369" />
-    <state width="1877" height="343" key="GridCell.Tab.1.left" timestamp="1610072955369">
+    <state width="1281" height="326" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1610459949616" />
+    <state width="1293" height="326" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1611828864814" />
+    <state width="1293" height="326" key="GridCell.Tab.1.center" timestamp="1611828864814">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="343" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1610072955369" />
-    <state width="1877" height="343" key="GridCell.Tab.1.right" timestamp="1610072955369">
+    <state width="1281" height="326" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1610459949616" />
+    <state width="1293" height="326" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1611828864814" />
+    <state width="1293" height="326" key="GridCell.Tab.1.left" timestamp="1611828864814">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="343" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1610072955369" />
-    <state width="1293" height="295" key="GridCell.Tab.2.bottom" timestamp="1610072922209">
+    <state width="1281" height="326" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1610459949616" />
+    <state width="1293" height="326" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1611828864814" />
+    <state width="1293" height="326" key="GridCell.Tab.1.right" timestamp="1611828864814">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="295" key="GridCell.Tab.2.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1610072922209" />
-    <state width="1293" height="295" key="GridCell.Tab.2.center" timestamp="1610072922208">
+    <state width="1281" height="326" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1610459949616" />
+    <state width="1293" height="326" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1611828864814" />
+    <state width="1293" height="326" key="GridCell.Tab.2.bottom" timestamp="1611828864814">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="295" key="GridCell.Tab.2.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1610072922208" />
-    <state width="1293" height="295" key="GridCell.Tab.2.left" timestamp="1610072922208">
+    <state width="1281" height="326" key="GridCell.Tab.2.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1610459949616" />
+    <state width="1293" height="326" key="GridCell.Tab.2.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1611828864814" />
+    <state width="1293" height="326" key="GridCell.Tab.2.center" timestamp="1611828864814">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="295" key="GridCell.Tab.2.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1610072922208" />
-    <state width="1293" height="295" key="GridCell.Tab.2.right" timestamp="1610072922208">
+    <state width="1281" height="326" key="GridCell.Tab.2.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1610459949616" />
+    <state width="1293" height="326" key="GridCell.Tab.2.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1611828864814" />
+    <state width="1293" height="326" key="GridCell.Tab.2.left" timestamp="1611828864814">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="295" key="GridCell.Tab.2.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1610072922208" />
+    <state width="1281" height="326" key="GridCell.Tab.2.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1610459949616" />
+    <state width="1293" height="326" key="GridCell.Tab.2.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1611828864814" />
+    <state width="1293" height="326" key="GridCell.Tab.2.right" timestamp="1611828864814">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1281" height="326" key="GridCell.Tab.2.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1610459949616" />
+    <state width="1293" height="326" key="GridCell.Tab.2.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1611828864814" />
+    <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1611713996186">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="490" y="175" key="Maven.ArtifactSearchDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1611713996186" />
     <state x="453" y="161" key="SettingsEditor" timestamp="1609149500629">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -326,10 +415,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="743" y="297" key="chooseDestDirectoryDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1609150070856" />
-    <state x="858" y="301" width="885" height="614" key="find.popup" timestamp="1610007564329">
+    <state x="537" y="126" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1610433995134">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="858" y="301" width="885" height="614" key="find.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1610007564329" />
+    <state x="537" y="126" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1610433995134" />
+    <state x="727" y="240" width="885" height="614" key="find.popup" timestamp="1611828837095">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="727" y="240" width="885" height="614" key="find.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1611828837095" />
+    <state x="-1590" y="214" key="new project wizard" timestamp="1610459944934">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1590" y="214" key="new project wizard/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1610459944934" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1610073553755">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.apl.lms.label.print.mapper.UPSLabelPrintMapper">
+
+    <select id="getWaybillContacts" resultType="com.apl.lms.label.print.bo.UPSInvoiceBo">
+        select * from apl_lms_waybill_data.waybill_contacts where ship_order_id = #{id}
+    </select>
+    <select id="getWaybillCommodityList" resultType="com.apl.lms.label.print.bo.WaybillCommodityBo">
+        select * from apl_lms_waybill_data.waybill_commodity where ship_order_id = #{id};
+    </select>
+</mapper>

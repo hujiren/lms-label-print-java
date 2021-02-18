@@ -34,7 +34,7 @@
                     <Names>
                         <Type>long</Type>
                         <Encoding>utf-8</Encoding>
-                        <Value>International PriorityÂ®</Value>
+                        <Value>International Priority????</Value>
                     </Names>
                     <Names>
                         <Type>long</Type>
@@ -44,7 +44,7 @@
                     <Names>
                         <Type>medium</Type>
                         <Encoding>utf-8</Encoding>
-                        <Value>International PriorityÂ®</Value>
+                        <Value>International Priority????</Value>
                     </Names>
                     <Names>
                         <Type>medium</Type>
@@ -342,4 +342,4 @@
             </CompletedShipmentDetail>
         </ProcessShipmentReply>
     </SOAP-ENV:Body>
-	</SOAP-ENV:Envelope>
+</SOAP-ENV:Envelope>

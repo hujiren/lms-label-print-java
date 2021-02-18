@@ -4,14 +4,9 @@ import com.apl.lms.label.print.service.LabelPrintService;
 import com.apl.lms.label.print.vo.InvoiceBase64Vo;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
-import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-
+import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.HttpServletResponse;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
@@ -32,7 +27,6 @@ public class LabelPrintController {
     public LabelPrintController(LabelPrintService labelPrintService){
         this.labelPrintService = labelPrintService;
     }
-
 
     @GetMapping("/print-label")
     @ApiOperation(value = "打印label", notes = "打印label")
@@ -55,5 +49,12 @@ public class LabelPrintController {
     @ApiImplicitParam(name = "id", value = "运单id/订单id", required = true, paramType = "query")
     public InvoiceBase64Vo getInvoiceBase64(@NotNull(message = "运单id不能为空") @Min(value = 0, message = "最小值为0") Long id){
          return labelPrintService.getInvoiceBase64(id);
+    }
+
+    @GetMapping("/review-invoice")
+    @ApiOperation(value = "预览发票", notes = "预览发票")
+    @ApiImplicitParam(name = "id", value = "运单id/订单id", required = true, paramType = "query")
+    public void reviewInvoice(@NotNull(message = "运单id不能为空") @Min(value = 0, message = "最小值为0") Long id){
+       labelPrintService.reviewInvoice(id);
     }
 }

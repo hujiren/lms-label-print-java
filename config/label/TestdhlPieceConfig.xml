@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+
+
+    <pieces path="Pieces" rowClassName="com.apl.lms.label.print.po.DHLPiecePo">
+        <PieceNumber path="PieceNumber"/>
+        <Depth path="Depth"/>
+        <Width path="Width"/>
+        <Height path="Height"/>
+        <Weight path="Weight"/>
+        <PackageType path="PackageType"/>
+        <DimWeight path="DimWeight"/>
+        <PieceContents path="PieceContents"/>
+        <ReferenceID path="Response/aaa/bb/PieceReference/ReferenceID"/>
+        <DataIdentifier path="DataIdentifier"/>
+        <LicensePlate path="LicensePlate"/>
+        <LicensePlateBarCode path="LicensePlateBarCode"/>
+    </pieces>
+</root>

@@ -25,4 +25,10 @@ public interface LabelPrintService {
      * @return
      */
     InvoiceBase64Vo getInvoiceBase64(Long id);
+
+    /**
+     * 预览发票
+     * @param id
+     */
+    void reviewInvoice(Long id);
 }

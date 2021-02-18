@@ -2,6 +2,7 @@ package com.apl.lms.label.print.dao;
 
 import com.apl.db.adb.AdbHelper;
 import com.apl.lms.label.print.bo.ShipOrderBo;
+import com.apl.lms.label.print.bo.UPSInvoiceBo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
@@ -18,6 +19,18 @@ public class LabelPrintDao{
 
     @Autowired
     AdbHelper adbHelper;
+
+    public UPSInvoiceBo getWaybillContacts(Long id, Integer waybillIdOrOrderId){
+
+        StringBuffer sql = new StringBuffer();
+        if(waybillIdOrOrderId.equals(1))
+            sql.append("select id from apl_lms_waybill_data.waybill_commodity where ship_order_id = " + id);
+        else
+            sql.append("select id from apl_lms_waybill_data.waybill_commodity where waybill_id = " + id);
+
+        UPSInvoiceBo upsInvoiceBo = adbHelper.queryObj(sql.toString(), null, UPSInvoiceBo.class);
+        return upsInvoiceBo;
+    }
 
     /**
      * 获取下单时间和转单号

@@ -1,0 +1,68 @@
+<ShipmentCreationResponse xmlns="http://ws.aramex.net/ShippingAPI/v1/">
+    <Transaction xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <Reference1/>
+        <Reference2/>
+        <Reference3/>
+        <Reference4/>
+        <Reference5/>
+    </Transaction>
+    <Notifications xmlns:i="http://www.w3.org/2001/XMLSchema-instance"/>
+    <HasErrors>true</HasErrors>
+    <Shipments xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <ProcessedShipment>
+            <ID>31679945441</ID>
+            <Reference1/>
+            <Reference2/>
+            <Reference3/>
+            <ForeignHAWB/>
+            <HasErrors>true</HasErrors>
+            <Notifications>
+                <Notification>
+                    <Code>ERR44</Code>
+                    <Message>Submit Attachments - Failed to submit the related attachments</Message>
+                </Notification>
+            </Notifications>
+            <ShipmentLabel>
+                <LabelURL>https://ws.aramex.net/content/rpt_cache/4a3a1b71b52b499288a86d8edd80d1dc.pdf</LabelURL>
+                <LabelFileContents/>
+            </ShipmentLabel>
+            <ShipmentDetails>
+                <Origin>SHA</Origin>
+                <Destination>DXB</Destination>
+                <ChargeableWeight>
+                    <Unit>KG</Unit>
+                    <Value>16.8</Value>
+                </ChargeableWeight>
+                <DescriptionOfGoods>OPP roll</DescriptionOfGoods>
+                <GoodsOriginCountry>CN</GoodsOriginCountry>
+                <NumberOfPieces>1</NumberOfPieces>
+                <ProductGroup>EXP</ProductGroup>
+                <ProductType>PPX</ProductType>
+                <PaymentType>P</PaymentType>
+                <PaymentOptions/>
+                <CustomsValueAmount>
+                    <CurrencyCode>USD</CurrencyCode>
+                    <Value>103.6</Value>
+                </CustomsValueAmount>
+                <CashOnDeliveryAmount>
+                    <CurrencyCode>USD</CurrencyCode>
+                    <Value>0</Value>
+                </CashOnDeliveryAmount>
+                <InsuranceAmount>
+                    <CurrencyCode>USD</CurrencyCode>
+                    <Value>0</Value>
+                </InsuranceAmount>
+                <CashAdditionalAmount>
+                    <CurrencyCode>USD</CurrencyCode>
+                    <Value>0</Value>
+                </CashAdditionalAmount>
+                <CollectAmount>
+                    <CurrencyCode>USD</CurrencyCode>
+                    <Value>0</Value>
+                </CollectAmount>
+                <Services i:nil="true"/>
+            </ShipmentDetails>
+            <ShipmentAttachments/>
+        </ProcessedShipment>
+    </Shipments>
+	</ShipmentCreationResponse>

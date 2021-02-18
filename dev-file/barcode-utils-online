@@ -9,3 +9,15 @@ https://my.oschina.net/u/2499632/blog/1079065
 base64字符串转化成图片
 https://www.cnblogs.com/sung1024/p/11391965.html
 https://blog.csdn.net/qq_39098813/article/details/81270164
+
+
+dhl可预览label 可预览发票 不支持获取发票的base64Code的功能
+
+ups可预览label  不可预览发票(没有发票)  发票目前使用的是dhl的发票的pdf, 所以获取的是DHL的base64Code
+
+Fedex可预览label 可预览发票(有独立的发票xml) 可获取发票的base64Code(独立的xml,需要单独提取)
+
+aramex可预览label 不可预览发票(没有发票) 不可获取发票的base64Code(没有发票)
+
+
+https://github.com/hujiren/lms-label-print-java.git

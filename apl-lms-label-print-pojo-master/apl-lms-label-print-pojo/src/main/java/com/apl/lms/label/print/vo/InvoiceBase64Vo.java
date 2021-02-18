@@ -20,4 +20,5 @@ public class InvoiceBase64Vo implements Serializable {
 
     @ApiModelProperty(name = "base64Code", value = "base64编码")
     private String base64Code;
+
 }

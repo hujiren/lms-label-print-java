@@ -1,35 +1,38 @@
 package com.apl.lms.label.print.utils;
 
 import com.itextpdf.text.pdf.PdfWriter;
+import org.dom4j.Document;
 import org.dom4j.Element;
-
+import org.dom4j.io.SAXReader;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.util.List;
 
 class mergeUpsPdf{
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         File xmlFile = new File("G:\\waybill\\label\\2020-12-17\\1Z75863V6600005216.xml");
+        String savePath = "G:\\waybill\\label\\2020-12-17";
+        mergeUpsPdf(xmlFile, savePath);
     }
 
-    void mergeUpsPdf(File xmlFile, String savePath, Element rootNode) throws Exception {
+    static void mergeUpsPdf(File xmlFile, String savePath) throws Exception {
 
         if (savePath == null) {
             return;
         }
-
-//        String strTime = DateHelper.dateToStr(new Date(), "yy-MM-dd HH:mm:ss");
-//        System.err.println("--开始转换UPS图片base64代码转换为PDF--" + strTime);
-
+        SAXReader saxReader = new SAXReader();
+        Document document = saxReader.read(xmlFile);
+        Element rootNode = document.getRootElement();
         Element elShipment = rootNode.element("Body").element("ShipmentResponse")
                 .element("ShipmentResults");
 
         String trackNo = elShipment.elementText("ShipmentIdentificationNumber");
 
         File outDir = new File(savePath);
-        outDir.mkdirs();
-        String saveFile = savePath + "\\" + trackNo + ".pdf";
+        if(!outDir.exists())
+            outDir.mkdirs();
+        String saveFile = savePath + "\\" + trackNo + "-label.pdf";
         FileOutputStream fos = new FileOutputStream(saveFile);
         com.itextpdf.text.Document doc = new com.itextpdf.text.Document(null, 0, 0, 0, 0);
         PdfWriter.getInstance(doc, fos);
@@ -57,7 +60,5 @@ class mergeUpsPdf{
         doc = null;
         fos = null;
 
-//        strTime = DateHelper.dateToStr(new Date(), "yy-MM-dd HH:mm:ss");
-//        System.err.println("--结束转换UPS图片base64代码转换为PDF--" + strTime);
     }
 }

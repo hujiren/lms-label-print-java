@@ -3,20 +3,17 @@ package com.apl.lms.label.print.utils;
 import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.image.BufferedImage;
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-
+import java.io.*;
 import javax.imageio.ImageIO;
 
+import cn.hutool.core.codec.Base64;
+import com.apl.lib.exception.AplException;
 import com.itextpdf.text.Document;
 import com.itextpdf.text.Rectangle;
 import com.itextpdf.text.pdf.PdfWriter;
 
 import sun.misc.BASE64Decoder;
+import sun.misc.Cache;
 
 public class ImgUtil {
 	// 顺时针旋转90度（通过交换图像的整数像素RGB 值）
@@ -74,6 +71,13 @@ public class ImgUtil {
 		return bufferedImage;
 	}
 
+	/**
+	 * 更改图片大小
+	 * @param src
+	 * @param scale
+	 * @param flag
+	 * @return
+	 */
 	public static BufferedImage scale(BufferedImage src, int scale, boolean flag) {
 
 		int width = src.getWidth(); // 得到源图宽
@@ -91,11 +95,17 @@ public class ImgUtil {
 		Image image = src.getScaledInstance(width, height, Image.SCALE_SMOOTH);
 		BufferedImage tag = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
 		Graphics g = tag.getGraphics();
-		g.drawImage(image, 0, 0, null); // 绘制缩小后的图
+		g.drawImage(image, width, height, null); // 绘制缩小后的图
 		g.dispose();
 		return tag;
 	}
 
+	/**
+	 * 读取输入字节流为图片
+	 * @param base64string
+	 * @return
+	 * @throws IOException
+	 */
 	public static BufferedImage GetBufferedImage(String base64string) throws IOException {
 		BufferedImage image = null;
 		InputStream stream = BaseToInputStream(base64string);
@@ -104,6 +114,12 @@ public class ImgUtil {
 
 	}
 
+	/**
+	 * base64转换为字节输入流
+	 * @param base64string
+	 * @return
+	 * @throws IOException
+	 */
 	public static InputStream BaseToInputStream(String base64string) throws IOException {
 		ByteArrayInputStream stream = null;
 		BASE64Decoder decoder = new BASE64Decoder();
@@ -141,12 +157,17 @@ public class ImgUtil {
 		doc.close();
 	}
 
+	/**
+	 * 将图片添加到document文档里
+	 * @param doc
+	 * @param image
+	 * @param formatName
+	 * @throws Exception
+	 */
 	public static void addPdfImage(Document doc, BufferedImage image, String formatName)
 			throws Exception {
 
 		com.itextpdf.text.Image imagePdf = null;
-		doc.setPageSize(new Rectangle(image.getWidth(), image.getHeight()));
-
 		ByteArrayOutputStream out = new ByteArrayOutputStream();
 		ImageIO.write(image, formatName, out);
 		byte[] ImagByte = out.toByteArray();
@@ -157,14 +178,27 @@ public class ImgUtil {
 		doc.newPage();
 		doc.add(imagePdf);
 	}
-	
-	public static void addPdfPage(Document doc, BufferedImage image)
-			throws Exception {
 
+	/**
+	 * PDF转base64
+	 * @param filePath
+	 * @return
+	 */
+	public static String PdfToBase64(String filePath){
 
-		if (!doc.isOpen())
-			doc.open();
-		
+		byte[] data = null;
+
+		try{
+			InputStream is = new FileInputStream(filePath);
+			data = new byte[is.available()];
+			is.read(data);
+			is.close();
+
+		} catch (Exception e){
+			throw new AplException(e.getMessage(), e.getCause().toString());
+		}
+		String base64Code = Base64.encode(data);
+
+		return base64Code;
 	}
-
 }

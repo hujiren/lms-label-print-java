@@ -1,11 +1,14 @@
 package com.apl.lms.label.print.utils;
 
 import com.apl.lib.exception.AplException;
+import org.dom4j.Document;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
 import org.springframework.stereotype.Component;
 import sun.misc.BASE64Decoder;
 import java.io.*;
+import java.net.HttpURLConnection;
+import java.net.URL;
 
 /**
  * @author hjr start
@@ -110,12 +113,11 @@ public class ConvertImageUtil {
         if (null == xmlFile) {
             return null;
         }
-
         Element rootNode;
         try {
             //读取xml
             SAXReader reader = new SAXReader();
-            org.dom4j.Document document = reader.read(xmlFile);
+            Document document = reader.read(xmlFile);
             rootNode = document.getRootElement();
         }catch (Exception e){
             throw new AplException(e.getMessage(), e.getCause().toString());
@@ -123,5 +125,76 @@ public class ConvertImageUtil {
         return rootNode;
     }
 
+    /**
+     * 下载文件并保存
+     * @param fileUrl
+     * @param saveFileFullPath
+     * @throws IOException
+     */
+    public static void downloadFromUrl(String fileUrl,String saveFileFullPath) throws IOException {
 
+        URL url = new URL(fileUrl);
+        HttpURLConnection conn = (HttpURLConnection)url.openConnection();
+        conn.setConnectTimeout(3 * 1000);
+        //防止屏蔽程序抓取而返回403错误
+        conn.setRequestProperty("User-Agent", "Mozilla/4.0 (compatible; MSIE 5.0; Windows NT; DigExt)");
+        //得到输入流
+        InputStream inputStream = conn.getInputStream();
+        //获取自己数组
+        byte[] getData = readInputStream(inputStream);
+
+        int index = 0;
+
+        if(saveFileFullPath.contains("\\"))
+            index = saveFileFullPath.lastIndexOf("\\");
+        else if(saveFileFullPath.contains("/"))
+            index = saveFileFullPath.lastIndexOf("/");
+
+        String saveFilePath = saveFileFullPath.substring(0, index);
+
+        //文件保存位置
+        File saveDir = new File(saveFilePath);
+        if(!saveDir.exists()){
+            saveDir.mkdir();
+        }
+        File file = new File(saveFileFullPath);
+        FileOutputStream fos = new FileOutputStream(file);
+        fos.write(getData);
+        if(fos!=null){
+            fos.close();
+        }
+        if(inputStream!=null){
+            inputStream.close();
+        }
+    }
+
+    /**
+     * 从输入流中获取字节数组
+     * @param inputStream
+     * @return
+     * @throws IOException
+     */
+    public static  byte[] readInputStream(InputStream inputStream) throws IOException {
+        byte[] buffer = new byte[1024];
+        int len = 0;
+        ByteArrayOutputStream bos = new ByteArrayOutputStream();
+        while((len = inputStream.read(buffer)) != -1) {
+            bos.write(buffer, 0, len);
+        }
+        bos.close();
+        return bos.toByteArray();
+    }
+
+    /**
+     * 判断文件是否存在
+     *
+     * @param filePath
+     * @return
+     */
+    public static Boolean existsFile(String filePath) {
+        File file = new File(filePath);
+        if (!file.exists())
+            return false;
+        return true;
+    }
 }
